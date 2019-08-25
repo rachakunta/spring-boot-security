@@ -1,5 +1,8 @@
 package com.rana.spring.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 public class Employee extends Person {
 
     private String empId;
@@ -7,8 +10,10 @@ public class Employee extends Person {
     private double salary;
     private String designation;
 
-    public Employee(String lastName, String firstName, int age, Gender gender, String empId, String company, double salary, String designation) {
-        super(lastName, firstName, age, gender);
+    public Employee(){}
+
+    public Employee(String personId, String lastName, String firstName, int age, Gender gender, String empId, String company, double salary, String designation) {
+        super(personId, lastName, firstName, age, gender);
         this.empId = empId;
         this.company = company;
         this.salary = salary;

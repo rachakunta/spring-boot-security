@@ -1,17 +1,36 @@
 package com.rana.spring.models;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Document
 public class Person {
 
+    @Id
+    private String personId;
     private String lastName;
     private String firstName;
     private int age;
     private Gender gender;
 
-    public Person(String lastName, String firstName, int age, Gender gender) {
+    public Person(){}
+
+    public Person(String personId, String lastName, String firstName, int age, Gender gender) {
+        this.personId = personId;
         this.lastName = lastName;
         this.firstName = firstName;
         this.age = age;
         this.gender = gender;
+    }
+
+    public String getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(String personId) {
+        this.personId = personId;
     }
 
     public String getLastName() {
@@ -49,7 +68,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "lastName='" + lastName + '\'' +
+                "personId='" + personId + '\'' +
+                ", lastName='" + lastName + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", age=" + age +
                 ", gender=" + gender +
