@@ -1,7 +1,7 @@
 package com.rana.spring.models;
 
-enum Gender {
+public enum Gender {
+
     MALE,
-    FEMALE,
-    UNKNOWN
+    FEMALE
 }
