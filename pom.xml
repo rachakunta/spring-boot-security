@@ -44,6 +44,13 @@
             <artifactId>derby</artifactId>
             <scope>runtime</scope>
         </dependency>
+        <dependency>
+            <groupId>com.rana.allgorythms</groupId>
+            <artifactId>all-go-rythms</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/../all-go-rythms/target/all-go-rythms-1.0-SNAPSHOT.jar</systemPath>
+        </dependency>
     </dependencies>
 
 </project>
