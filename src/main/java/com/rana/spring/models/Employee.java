@@ -1,8 +1,11 @@
 package com.rana.spring.models;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+@Document
 public class Employee extends Person {
 
     private String empId;
