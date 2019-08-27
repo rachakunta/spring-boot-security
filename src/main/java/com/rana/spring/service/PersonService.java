@@ -1,7 +1,7 @@
 package com.rana.spring.service;
 
 import com.rana.spring.models.Person;
-import com.rana.spring.repository.PersonRepository;
+import com.rana.spring.dao.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

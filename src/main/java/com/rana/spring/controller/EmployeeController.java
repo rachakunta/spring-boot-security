@@ -1,7 +1,6 @@
 package com.rana.spring.controller;
 
 import com.rana.spring.models.Employee;
-import com.rana.spring.repository.EmployeeRepository;
 import com.rana.spring.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
