@@ -1,8 +1,7 @@
-package com.rana.spring.repository;
+package com.rana.spring.dao;
 
 import com.rana.spring.models.Person;
 import org.springframework.data.mongodb.repository.MongoRepository;
-import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 
 @NoRepositoryBean

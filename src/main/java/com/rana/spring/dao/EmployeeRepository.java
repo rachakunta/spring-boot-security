@@ -1,7 +1,6 @@
-package com.rana.spring.repository;
+package com.rana.spring.dao;
 
 import com.rana.spring.models.Employee;
-import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 
