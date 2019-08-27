@@ -1,5 +1,6 @@
 package com.rana.spring.controller;
 
+import com.rana.spring.exception.NotAMajorException;
 import com.rana.spring.models.Employee;
 import com.rana.spring.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +25,7 @@ public class EmployeeController {
 
     @RequestMapping(method = RequestMethod.POST, value = "/")
     public void createAnEmployee(@RequestBody Employee employee){
+        if(employee.getAge() < 18) throw new NotAMajorException("Age must be minimum of 18.");
         employeeService.createAnEmployee(employee);
     }
 }
